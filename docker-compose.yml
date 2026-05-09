@@ -1,7 +1,7 @@
 services:
 
   backend:
-    build: ./Backend
+    image: sufiyanimran/zakat-backend
     ports:
       - "5000:5000"
 
@@ -12,7 +12,7 @@ services:
       - mongo
 
   frontend:
-    build: ./Frontend
+    image: sufiyanimran/zakat-frontend
     ports:
       - "5173:5173"
 
